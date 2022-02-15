@@ -1,4 +1,4 @@
-package me.maplef.utils;
+package me.maplef.mapbot_bungee.utils;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;

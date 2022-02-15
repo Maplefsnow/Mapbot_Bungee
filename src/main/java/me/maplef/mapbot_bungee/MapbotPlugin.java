@@ -1,4 +1,4 @@
-package me.maplef;
+package me.maplef.mapbot_bungee;
 
 import net.mamoe.mirai.message.data.MessageChain;
 

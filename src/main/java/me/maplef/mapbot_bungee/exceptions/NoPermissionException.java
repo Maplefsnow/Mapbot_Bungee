@@ -1,4 +1,4 @@
-package me.maplef.exceptions;
+package me.maplef.mapbot_bungee.exceptions;
 
 public class NoPermissionException extends Exception{
     public NoPermissionException(){

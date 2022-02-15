@@ -1,7 +1,9 @@
-package me.maplef.utils;
+package me.maplef.mapbot_bungee.utils;
 
-import me.maplef.exceptions.PlayerNotFoundException;
+import me.maplef.mapbot_bungee.Main;
+import me.maplef.mapbot_bungee.exceptions.PlayerNotFoundException;
 
+import java.io.File;
 import java.sql.*;
 import java.util.HashMap;
 import java.util.Locale;
@@ -27,7 +29,8 @@ public class DatabaseOperator {
     }
 
     private static Connection connect() {
-        String url = "jdbc:sqlite:.\\plugins\\MapBot\\database.db";
+//        String url = "jdbc:sqlite:.\\plugins\\MapBot\\database.db";
+        String url = "jdbc:sqlite:" + new File(Main.instance.getDataFolder(), "database.db").getPath();
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(url);

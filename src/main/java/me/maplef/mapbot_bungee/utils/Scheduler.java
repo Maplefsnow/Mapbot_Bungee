@@ -1,4 +1,4 @@
-package me.maplef.utils;
+package me.maplef.mapbot_bungee.utils;
 
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;

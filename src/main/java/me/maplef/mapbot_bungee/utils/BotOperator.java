@@ -1,6 +1,6 @@
-package me.maplef.utils;
+package me.maplef.mapbot_bungee.utils;
 
-import me.maplef.Main;
+import me.maplef.mapbot_bungee.Main;
 import net.mamoe.mirai.Bot;
 import net.mamoe.mirai.BotFactory;
 import net.mamoe.mirai.message.data.Message;

@@ -1,9 +1,10 @@
-package me.maplef;
+package me.maplef.mapbot_bungee;
 
-import me.maplef.listeners.GameListener;
-import me.maplef.listeners.GroupListener;
-import me.maplef.utils.BotOperator;
-import me.maplef.utils.CU;
+import me.maplef.mapbot_bungee.listeners.GameListener;
+import me.maplef.mapbot_bungee.listeners.GroupListener;
+import me.maplef.mapbot_bungee.listeners.PluginMessageListener;
+import me.maplef.mapbot_bungee.utils.BotOperator;
+import me.maplef.mapbot_bungee.utils.CU;
 import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.config.Configuration;
@@ -42,7 +43,8 @@ public final class Main extends Plugin implements Listener {
             System.out.println("Mapbot登陆成功");
         }).start();
 
-        getProxy().getPluginManager().registerListener(this, new GameListener());
+        this.getProxy().getPluginManager().registerListener(this, new GameListener());
+        this.getProxy().getPluginManager().registerListener(this, new PluginMessageListener());
 
         System.out.println(CU.t(messages.getString("enable-message.console")));
     }

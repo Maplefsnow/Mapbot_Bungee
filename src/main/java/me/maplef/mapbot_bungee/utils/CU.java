@@ -1,4 +1,4 @@
-package me.maplef.utils;
+package me.maplef.mapbot_bungee.utils;
 
 import net.md_5.bungee.api.ChatColor;
 

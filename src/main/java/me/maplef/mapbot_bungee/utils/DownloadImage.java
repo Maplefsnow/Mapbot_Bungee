@@ -1,4 +1,4 @@
-package me.maplef.utils;
+package me.maplef.mapbot_bungee.utils;
 
 import java.io.File;
 import java.io.FileOutputStream;
